@@ -1,50 +1,57 @@
-# Data Analytics Recruitment Showcase
+# Data Analytics Assessment
 
-## Purpose
-This repository serves as a sample data stack for candidates to demonstrate their understanding of databases, data processing, and problem-solving.
+## Objective
 
-There are several stages to this review:
-1. Preparing and analysing the environment at home before the technical interview.
-2. Presenting an overview of the given selected objective.
+This repository serves as a conduit for a specialized data analytics task, tailored to gauge a candidate's proficiency in data management, data processing, and problem-solving. Moreover, it also evaluates your ability to narrate a compelling story through data. 
 
-The objective review aims to give an insight into your approaches to the defined competencies required for this role.
+Your task is to choose one of the problems defined below, solve it using the provided data and tools, and present your solution and thought process during the interview.
+
+## Problems to Solve
+1. Create a dashboard to visualize which tracks best suit Williams cars.
+2. Develop a simple tyre management strategy dashboard.
+3. Saftety car impact; What impact does a safety car have on race outcomes, which races have the highest likelyhood of a safety car and how might this play into tyre strategies.
+3. Tell a data-driven story of your own choosing from the available dataset.
 
 ## Prerequisites
-- Understanding of relational databases, including how to create tables, insert data, and query data. For the purpose of this test, we are using PostgreSQL.
-- Proficiency in the Python programming language, including how to read and write files, process data, and access a PostgreSQL database.
-- Familiarity with Docker for container management, utilised through Docker Compose tool. Docker and Docker Compose need to be installed on your development machine. While knowledge of Docker is not a requirement for this role, an understanding of DevOps is crucial.
-- Familiarity with Git for source control, and a github.com account which will be used for sharing your code.
 
-We have included example data and program code. The example schema creates simple tables, with Python example code to load data from a CSV file and insert it into a database table. Instructions on how to use the Docker containers, start the database, and use the examples are located towards the end of this document.
+To successfully undertake this task, you should possess the following skills:
 
-## Background
-We have provided a GitHub repository containing:
+- Proficiency in data analysis techniques using Python: You should be comfortable in manipulating, analyzing, and visualizing data with Python.
+- Experience with data visualization tools and libraries: To effectively communicate your findings, you should be capable of creating engaging and meaningful dashboards.
+- Familiarity with container management using Docker and Docker Compose: While in-depth knowledge isn't necessary, a basic understanding of DevOps principles will be beneficial.
+- Knowledge of Git for version control: A GitHub account will be necessary for you to share your work with us.
 
-- A `docker-compose.yml` file that configures a container for the PostgreSQL database, a Jupyter notebook service to run Python code, and MinIO as an object store for the downloaded raw files.
-- An `init.sql` file that creates the tables in the database and populates some data prior to the objectives.
-- A Python script called `load-data.py` that pulls some web data to assist with the initial data load.
-- `requirements.txt` that lists the Python packages required for the load data code during setup.
-- A notebook folder containing `update-circuits.ipynb`, a Jupyter notebook that retrieves a file called `circuits.csv` from the object store and looks for new `circuits` not currently listed in the PostgreSQL table `circuits`.
+Remember, our primary focus lies in your data analysis skills and your ability to tell a story from the data.
 
-## Problem
-We would like you to complete a sequence of steps. We anticipate this will take no more than a couple of hours of your time.
-1. Fork the git repo to your own GitHub account.
-2. Analyse the existing `update-circuits.ipynb` notebook. It has some issues with the data it is inserting into the database. Can you describe what the problem is and suggest some approaches to prevent the issue?
-3. Create a Jupyter notebook Python script to insert the results from 2021 onwards within the `results.csv` into the `results` table.
-4. Share a link to your cloned git repo with us so we can review your approach during the technical interview.
+## What We Provide
 
-Instructions on how to run the services and connect are given below.
+This repository contains the following resources to assist you:
 
-## Notes on Completing These Tasks
-- There is no 'right' way to do this. We are interested in the choices you make, how you justify them, and your development process.
-- Consider what kind of error handling and testing is appropriate.
-- All data input, storage, and output should be in UTF-8. Expect multi-byte characters in the data.
+- A docker-compose.yml file for setting up a Jupyter notebook server, and MinIO Object Store for storing any raw data.
+- A requirements.txt file specifying the Python packages necessary for executing the provided scripts.
+- A set of Jupyter notebooks to guide you through the process of data retrieval and analysis.
 
-## Technical Review at Your Interview
-During your interview, we will spend 45 minutes reviewing this problem with you. This will include:
-- Examining any code developed and the solution.
-- Discussing your thought process on approaching a solution to the problem.
-- Considering future development prospects.
+## Instructions
+
+1. Fork this repository to your GitHub account.
+2. Select one of the proposed problem scenarios for your analysis.
+3. Review the provided Jupyter notebooks for data samples to help develop your potential solution.
+5. Analyze and visualize the data to answer the problem you chose using any methods or tools you deem fit.
+6. Share the link to your forked GitHub repository with us so we can review your work during the interview.
+
+## Note
+
+- We value the quality of the solution, not the quantity. There is no 'right' way to do this. We are interested in your decisions, your justification, and your development process.
+- Consider appropriate error handling and testing strategies.
+- Ensure all data is handled in UTF-8 to support multi-byte characters.
+
+## During the Interview
+
+We will spend 45 minutes reviewing your solution, which includes:
+
+- Code review and discussion.
+- Discussion on your problem-solving process.
+- Brainstorming future development ideas.
 
 ## Setup Notes:
 ### Requirements

@@ -1,5 +1,5 @@
-pandas
-python-Levenshtein
+fastf1
 minio
-fuzzywuzzy
+pyarrow
+fastparquet
 psycopg2-binary
